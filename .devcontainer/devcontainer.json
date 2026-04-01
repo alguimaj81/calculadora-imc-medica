@@ -1,0 +1,24 @@
+{
+  "name": "Calculadora IMC Médica - Python + Streamlit",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "GitHub.copilot"
+      ]
+    }
+  },
+  
+  "postCreateCommand": "pip install streamlit",
+  
+  "forwardPorts": [8501],
+  "portsAttributes": {
+    "8501": {
+      "label": "Calculadora IMC",
+      "onAutoForward": "openPreview"
+    }
+  }
+}
